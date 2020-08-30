@@ -1,0 +1,28 @@
+{
+  "name": "OASISTECH",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "request": "^2.88.2",
+    "foreach-timeout": "^3.0.1",
+    "express": "^4.17.1",
+    "map": "^1.0.1",
+    "https": "^1.0.0",
+    "fs": "^0.0.2",
+    "fs-extra": "^9.0.1",
+    "dotenv": "^8.2.0",
+    "superagent": "^6.0.0",
+    "random-puppy": "^1.1.0",
+    "noblox.js": "^4.7.1",
+    "child_process": "^1.0.2",
+    "nekos.life": "^2.0.7",
+    "nsfw": "^2.0.0"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}

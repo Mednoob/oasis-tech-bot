@@ -1,0 +1,29 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const http = require('http');
+const express = require('express');
+const app = express();
+const prefix = "-"
+app.get("/", (request, response) => {
+  console.log('Pinging');
+  response.sendStatus(200);
+});
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000);
+
+
+
+const Acti = (client.users.cache.size);
+client.on('ready', () => {
+console.log("Bot is Ready to Use!");
+  
+  const ActivityList = ['OasisTech', "Hosted by OasisTech Hostinger","Wanna host a bot for 24/7? use our hostinger! only 1$/month!","Wanna host a bot but dont wanna pay per month? buy for lifetime for 10$!"];
+  setInterval(function() {
+    let Activity =
+      ActivityList[Math.floor(Math.random() * ActivityList.length)];
+    client.user.setActivity(Activity);
+  }, 3000);
+});
+client.login(process.env.TOKEN)
